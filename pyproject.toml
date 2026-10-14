@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bigcell"
+version = "1.0.0"
+description = "BigCell: Generating Gigapixel Whole-Slide Images (NeurIPS 2026)"
+requires-python = ">=3.10"
+license = { text = "CC-BY-NC-4.0" }
+dynamic = ["dependencies"]
+
+[tool.setuptools.dynamic]
+dependencies = { file = ["requirements.txt"] }
+
+[tool.setuptools.packages.find]
+include = ["bigcell*", "cgm*"]

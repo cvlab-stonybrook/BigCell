@@ -1,0 +1,11 @@
+# CGM pre-training on 4096 px regions (16x16 UNI-2 grids).
+exp_name: cgm_4096
+size: 4096
+batch_size: 8          # per GPU
+grad_accum_steps: 8
+learning_rate: 2.0e-4
+final_lr: 2.0e-5
+warmup_epochs: 40
+decay_end_epoch: 800
+epochs: 1400
+ema_decay: 0.9995

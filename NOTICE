@@ -1,0 +1,14 @@
+BigCell is released under CC BY-NC 4.0 (see LICENSE). It includes code adapted from the following
+projects, which remain under their original licences:
+
+- REPA-E (https://github.com/End2End-Diffusion/REPA-E), MIT License
+- SiT (https://github.com/willisma/SiT), MIT License
+- RAE: Diffusion Transformers with Representation Autoencoders
+  (https://github.com/bytetriper/RAE), MIT License, Copyright (c) 2025 Boyang Zheng
+  -> cgm/models.py (DiT-DH / DDT head, transport)
+
+Pretrained models used by BigCell are NOT redistributed and are subject to their own licences:
+
+- FLUX.2 VAE (black-forest-labs/FLUX.2-dev), FLUX non-commercial licence
+- UNI2-h (MahmoodLab/UNI2-h), CC-BY-NC-ND 4.0, gated
+- TITAN (MahmoodLab/TITAN), CC-BY-NC-ND 4.0, gated

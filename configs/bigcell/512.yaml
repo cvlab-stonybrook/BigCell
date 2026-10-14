@@ -1,0 +1,10 @@
+# Stage 2: 512 px crops, 2x2 UNI-2 tokens. Initialise from the 256 model.
+exp_name: bigcell_512
+resolution: 512
+init_from: exps/bigcell_256/checkpoints/<last>.pt
+batch_size: 2400
+learning_rate: 1.0e-4
+weighting: uniform
+gradient_checkpointing: true
+epochs: 1
+checkpoint_every: 10000

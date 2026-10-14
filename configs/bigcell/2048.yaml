@@ -1,0 +1,12 @@
+# Stage 4 (final BigCell tile generator): 2048 px tiles, 8x8 UNI-2 tokens, time shift alpha = 3.
+exp_name: bigcell_2048
+resolution: 2048
+init_from: exps/bigcell_1024/checkpoints/<last>.pt
+batch_size: 360
+learning_rate: 1.0e-4
+weighting: shifted_uniform
+alpha_shift: 3.0
+freeze_steps: 5000
+gradient_checkpointing: true
+epochs: 1
+checkpoint_every: 3600

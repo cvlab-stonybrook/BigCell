@@ -1,0 +1,13 @@
+# Stage 3: 1024 px crops, 4x4 UNI-2 tokens, SD3-style time shift (alpha = 3).
+# For the first 5k steps only the conditioning embedder and cross-attention are trained.
+exp_name: bigcell_1024
+resolution: 1024
+init_from: exps/bigcell_512/checkpoints/<last>.pt
+batch_size: 720
+learning_rate: 1.0e-4
+weighting: shifted_uniform
+alpha_shift: 3.0
+freeze_steps: 5000
+gradient_checkpointing: true
+epochs: 1
+checkpoint_every: 6500

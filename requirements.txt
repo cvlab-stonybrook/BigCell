@@ -1,0 +1,20 @@
+torch>=2.4
+torchvision
+# AutoencoderKLFlux2 (Flux.2 VAE)
+diffusers>=0.36
+# TITAN's remote code produces NaN / different text embeddings with transformers 5.x
+transformers==4.56.2
+huggingface_hub>=0.34,<1.0
+timm>=1.0
+safetensors
+accelerate
+einops
+# required by TITAN's remote code
+einops-exts
+h5py
+numpy
+pillow
+pyyaml
+# optional: --tiff output and --wandb logging
+tifffile
+wandb

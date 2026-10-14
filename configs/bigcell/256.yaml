@@ -1,0 +1,8 @@
+# Stage 1 of progressive training (paper Table 6): 256 px crops, 1 UNI-2 token.
+exp_name: bigcell_256
+resolution: 256
+batch_size: 4800
+learning_rate: 2.0e-4
+weighting: uniform
+epochs: 1
+checkpoint_every: 10000

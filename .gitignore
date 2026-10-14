@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+*.egg-info/
+exps/
+outputs/
+weights/
+wandb/
+*.pt
+*.safetensors
+.vscode/
+.idea/
+camera_ready.pdf

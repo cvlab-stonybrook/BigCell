@@ -1,0 +1,13 @@
+# CGM fine-tuning on 8192 px regions (32x32 UNI-2 grids), initialised from the 4096 model.
+# The released cgm-8192 corresponds to epoch 80 of this stage.
+exp_name: cgm_8192
+size: 8192
+init_from: exps/cgm_4096/checkpoints/<last>.pt
+batch_size: 8          # per GPU
+grad_accum_steps: 8
+learning_rate: 2.0e-4
+final_lr: 2.0e-5
+warmup_epochs: 40
+decay_end_epoch: 800
+epochs: 1400
+ema_decay: 0.9995
